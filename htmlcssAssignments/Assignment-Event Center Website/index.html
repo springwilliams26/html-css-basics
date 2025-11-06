@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Dip Venue</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">The <span>DIP</span> Venue</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          src="https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg"
+          alt="Concert stage at The Dip Music Venue"
+          width="600"
+        />
+        <div class="hero-text">
+          <h2>Live the Moment. Feel Alive.</h2>
+          <p>
+            Experience unforgettable performances from world-class artists in
+            Palm Harbor's hottest venue.
+          </p>
+          <a href="events.html" class="btn">See Upcoming Shows</a>
+        </div>
+      </section>
+
+      <section class="featured-events">
+        <h2>Upcoming Shows</h2>
+        <div class="event-grid">
+          <article class="event-card">
+            <img
+              src="https://images.pexels.com/photos/11794650/pexels-photo-11794650.jpeg"
+              alt="OnLetti performing"
+              width="600"
+            />
+            <h3>OnLetti Tour</h3>
+            <p>
+              <strong>Date:</strong> Nov 15, 2025<br /><strong>Genre:</strong
+              >Metal
+            </p>
+          </article>
+          <article class="event-card">
+            <img
+              src="https://images.pexels.com/photos/6260556/pexels-photo-6260556.jpeg"
+              alt="Comedian Lexi Ray"
+              width="600"
+            />
+            <h3>Lexi Ray Live</h3>
+            <p>
+              <strong>Date:</strong> Dec 3, 2025<br /><strong>Genre:</strong>
+              Comedy
+            </p>
+          </article>
+          <article class="event-card">
+            <img
+              src="https://images.pexels.com/photos/8197303/pexels-photo-8197303.jpeg"
+              alt="Comedian Lexi Ray"
+              width="600"
+            />
+            <h3>Sapphire Groove</h3>
+            <p>
+              <strong>Date:</strong> Dec 20, 2025<br /><strong>Genre:</strong>
+              Jazz
+            </p>
+          </article>
+          <article class="event-card">
+            <img
+              src="https://images.pexels.com/photos/7502184/pexels-photo-7502184.jpeg"
+              alt="The Echo Lights band"
+              width="600"
+            />
+            <h3>The Echo Lights</h3>
+            <p>
+              <strong>Date:</strong> Jan 8, 2025<br /><strong>Genre:</strong>
+              Indie Rock
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Book of Inquire</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+
+      <button id="backToTop" title="Back to top">Top</button>
+      <script>
+        /* Show button when user scrolls down */
+        window.onscroll = function () {
+          const btn = document.getElementById("backToTop");
+          if (
+            document.body.scrollTop > 300 ||
+            document.documentElement.scrollTop > 300
+          ) {
+            btn.style.display = "block";
+          } else {
+            btn.style.display = "none";
+          }
+        };
+
+        /* Scroll to top when clicked */
+        document
+          .getElementById("backToTop")
+          .addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+      </script>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 The Dip Venue | Follow us: <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+      </p>
+    </footer>
+  </body>
+</html>
