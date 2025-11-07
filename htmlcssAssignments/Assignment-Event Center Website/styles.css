@@ -261,6 +261,13 @@ form textarea {
   border-radius: 4px;
 }
 
+.form-note {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: -0.5rem;
+  text-align: center;
+}
+
 /* Gallery */
 .gallery-grid {
   display: grid;
@@ -308,6 +315,16 @@ footer a {
 #backToTop:hover {
   background-color: #ff3385;
   transform: scale(1.1);
+}
+
+/* Accessibility: Focus States */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #ff0055;
+  outline-offset: 3px;
+  box-shadow: 0 0 6px rgba(255, 0, 85, 0.6);
 }
 
 /* Responsive */
